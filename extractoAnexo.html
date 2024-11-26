@@ -1,0 +1,50 @@
+REQUISITOS APLICACIÓN CÁLCULO DEL COSTE HORA
+
+V1.0
+
+  
+CONTENIDO
+1	INTRODUCCIÓN Y OBJETO	3
+2	REQUISITOS FUNCIONALES	3
+3	REQUISITOS NO FUNCIONALES	3
+3.1	Requisitos de seguridad.	3
+3.2	Requisitos de disponibilidad.	4
+3.3	Requisitos de usabilidad.	4
+3.4	Requisitos de rendimiento.	4
+
+ 
+1	 INTRODUCCIÓN Y OBJETO
+Enmarcado dentro del plan para la transformación digital de Eurofunding, se plantea el proyecto para la creación de una plataforma para el cálculo del coste/hora del personal de nuestros clientes del servicio de Deducciones Fiscales, participante en los proyectos de I+D+i.. La plataforma dotará a los administrativos y consultores de Eurofunding de un método homogéneo y automatizado para la obtención del coste/hora.
+Las funciones principales son la carga de información laboral, la validación de la misma, el cálculo del coste hora y la exportación de los datos a la plantilla de memoria económica
+2	REQUISITOS FUNCIONALES
+La aplicación deberá realizar el cálculo PRECISO de las siguientes variables sobre los trabajadores de un cliente:
+•	Cálculo de retribuciones. Permitiendo indicar qué conceptos (de los existentes en los actuales modelos de Certificado de Retenciones o Modelo 190) incluir en dicho cálculo
+•	Cálculo de las cotizaciones a la Seguridad Social
+•	Cálculo de las bonificaciones a la Seguridad Social
+•	Cálculo de las horas efectivas.
+•	Cálculo de días de baja
+•	Cálculo completo del coste/hora en sus 2 variantes (por horas efectivas o por horas convenio)
+Dado que existen diferencias entre los métodos de cálculo existentes en la compañía, se valorará en la fase de diseño si se implementa un modelo homogéneo para toda la empresa o si se implementan variantes y cuáles.
+Deberá, asimismo:
+•	Extraer los datos laborales de forma automática de los archivos de la SS.
+•	Exportar toda la información y el resultado de los cálculos a un fichero excel con el formato a definir en la fase de diseño. La información ha de permitir su posterior manipulación y fácil interpretación por los administrativos que recogerán dichos datos para seguir con la elaboración del análisis económico del cliente. 
+•	Permitir indicar o cargar los trabajadores sobre los cuales se han de hacer los cálculos y exportar los resultados
+•	Avisar al usuario si la información de partida es errónea o completa, preferiblemente en el momento de la carga de datos.
+•	Generar un fichero con la información de partida faltante para enviar al cliente y que subsane. 
+3	REQUISITOS NO FUNCIONALES
+
+3.1	Requisitos de seguridad.
+ La aplicación no deberá ser usable para personal que no forme parte de la empresa.
+El código de la aplicación no deberá ser accesible para ningún usuario; sólo para el equipo encargado del desarrollo, y  tras su puesta en marcha, también por el Dpto. Legal de la empresa, que se encargará de realizar las actuaciones para salvaguardar la propiedad del código ante notario.
+La algoritmia para los cálculos de las diversas variables deberá ser inaccesible por los usuarios, para prevenir fugas de información con los algoritmos desarrollados para los cálculos. 
+
+
+3.2	Requisitos de disponibilidad. 
+El sistema deberá contar con una alta disponibilidad , cercana al 100%, y estar prevenida para los periodos de alta demanda (de Febrero a Mayo).
+
+3.3	Requisitos de usabilidad. 
+
+La plataforma deberá ser fácil de usar, a ser posible, con diseño one-page. Será de diseño simple y con una curva de aprendizaje rápida. Para una primera fase, se deberá primar la simplicidad de uso frente a la tenencia de capacidades/funcionalidades avanzadas. 
+
+3.4	Requisitos de rendimiento.
+La plataforma no deberá, en la medida de lo posible, bloquear el trabajo en otras cosas en paralelo .  
